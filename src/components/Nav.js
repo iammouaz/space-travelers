@@ -3,14 +3,14 @@ import { NavLink } from 'react-router-dom';
 import Logo from '../icon.png';
 
 const Nav = () => (
-  <header>
+  <header className="header">
     <span className="head">
-      <img src={Logo} alt="logo" />
+      <img className="img" src={Logo} alt="logo" />
       <h1>
         {'Space Travelers\'s Hub'}
       </h1>
     </span>
-    <nav>
+    <nav className="nav">
       <NavLink to="/" className="NavLink" activeClassName="is-active" exact>
         <span className="rockets">Rockets</span>
       </NavLink>
