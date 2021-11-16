@@ -3,8 +3,8 @@ import thunk from 'redux-thunk';
 import rocketsRducer from './rockets';
 
 const reducer = combineReducers({
-    rocketsRducer,
-    // please add here misssions reducer
+  rocketsRducer,
+  // please add here misssions reducer
 });
 
 const store = createStore(
