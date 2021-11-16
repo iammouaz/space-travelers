@@ -5,7 +5,7 @@ import { getRocketsList } from '../redux/rockets';
 
 const Rockets = () => {
   const dispatch = useDispatch();
-  const display = useSelector((state) => state.rocketsReducer);
+  const display = useSelector((state) => state.rocketsRducer);
   useEffect(() => {
     const loadRockets = async () => {
       await dispatch(getRocketsList());
