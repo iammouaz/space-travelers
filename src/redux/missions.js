@@ -11,8 +11,8 @@ export const getMisstions = async (dispatch) => {
 
   missions.forEach((mission) => {
     const missionsDetails = {
-      mission_id: mission.id,
-      mission_name: mission.name,
+      mission_id: mission.mission_id,
+      mission_name: mission.mission_name,
       description: mission.description,
     };
     missoinslist.push(missionsDetails);
@@ -34,7 +34,7 @@ export const cancelmission = (id) => ({
   id,
 });
 
-export const MissionReducer = (state = initState, action) => {
+const MissionReducer = (state = initState, action) => {
   switch (action.type) {
     case GET_MISSIONS_SUCCESS:
       return [...action.payload];
@@ -56,3 +56,5 @@ export const MissionReducer = (state = initState, action) => {
       return state;
   }
 };
+
+export default MissionReducer;

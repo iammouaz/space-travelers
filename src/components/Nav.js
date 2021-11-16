@@ -15,7 +15,7 @@ const Nav = () => (
         <span className="rockets">Rockets</span>
       </NavLink>
       <NavLink
-        to="/misssions"
+        to="/missions"
         className="NavLink"
         activeClassName="is-active"
       >
