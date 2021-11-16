@@ -8,7 +8,7 @@ import { registermissions, cancelmission } from '../redux/missions';
 const Mission = (props) => {
   const dispatch = useDispatch();
   const {
-    mission_id, mission_name, description, reserved,
+    id, mission_name, description, reserved,
   } = props;
 
   const missionClick = (id, reserved) => {
@@ -19,14 +19,14 @@ const Mission = (props) => {
     }
   };
   return (
-    <tr key={mission_id}>
+    <tr key={id}>
       <td>{mission_name}</td>
       <td>{description}</td>
       <td>
         {reserved ? (
-          <Button variant="outline-danger" onClick={() => missionClick(mission_id, reserved)}>Leave Mission</Button>
+          <Button variant="outline-danger" onClick={() => missionClick(id, reserved)}>Leave Mission</Button>
         ) : (
-          <Button variant="outline-primary" onClick={() => missionClick(mission_id, reserved)}>Join Mission</Button>
+          <Button variant="outline-primary" onClick={() => missionClick(id, reserved)}>Join Mission</Button>
         )}
       </td>
     </tr>
@@ -34,7 +34,7 @@ const Mission = (props) => {
 };
 
 Mission.propTypes = {
-  mission_id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   mission_name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   reserved: PropTypes.bool.isRequired,

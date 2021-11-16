@@ -41,14 +41,14 @@ const MissionReducer = (state = initState, action) => {
       return action.payload;
     case REGISTER_MISSIONS:
       return state.map((mission) => {
-        if (mission.id !== action.id) {
+        if (mission.mission_id !== action.id) {
           return mission;
         }
         return { ...mission, reserved: true };
       });
     case CANCEL_MISSIONS:
       return state.map((mission) => {
-        if (mission.id !== action.id) {
+        if (mission.mission_id !== action.id) {
           return mission;
         }
         return { ...mission, reserved: false };
