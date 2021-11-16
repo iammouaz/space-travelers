@@ -33,3 +33,26 @@ const cancelmission = (id) => ({
   type: CANCEL_MISSIONS,
   id,
 });
+
+const MissionReducer = (state = initState, action) => {
+  switch (action.type) {
+    case GET_MISSIONS_SUCCESS:
+      return [...action.payload];
+    case REGISTER_MISSIONS:
+      return state.map((mission) => {
+        if (mission.id !== action.id) {
+          return mission;
+        }
+        return { ...mission, reserved: true };
+      });
+    case CANCEL_MISSIONS:
+      return state.map((mission) => {
+        if (mission.id !== action.id) {
+          return mission;
+        }
+        return { ...mission, reserved: false };
+      });
+    default:
+      return state;
+  }
+};
