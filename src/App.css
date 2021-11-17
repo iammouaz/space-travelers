@@ -3,6 +3,10 @@ a {
   text-decoration: none;
 }
 
+.rockets-list li {
+  margin-bottom: 3rem;
+}
+
 .head {
   display: flex;
   gap: 10px;
@@ -42,4 +46,14 @@ a {
   width: 95% !important;
   position: relative;
   left: 2%;
+}
+
+.bg-success {
+  height: max-content;
+  margin-right: 2rem;
+  margin-top: 0.4rem;
+}
+
+.btn {
+  margin-top: 1.5rem;
 }
