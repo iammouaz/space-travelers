@@ -16,25 +16,24 @@ const Rocket = (props) => {
     }
   };
   return (
-    <li key={id}>
-      <img src={image} alt="rocket-img" />
-      <h2>{title}</h2>
+    <li key={id} className="row">
+      <img src={image} className="img-thumbnail col-sm-3" alt="rocket-img" />
       {reserved && (
-      <div>
-        <div>
-          <p>reserved</p>
-          <p>{description}</p>
+        <div className="col-sm-9  flex-column ">
+          <h2>{title}</h2>
+          <div className="d-inline-flex ">
+            <span className="bg-success text-white">reserved</span>
+            {description}
+          </div>
+          <button onClick={reserveRocket} type="button" className="btn btn-outline-secondary">cancel reservation</button>
         </div>
-        <button onClick={reserveRocket} type="button">cancel reservation</button>
-      </div>
       )}
       {!reserved && (
-      <div>
-        <div>
-          <p>{description}</p>
+        <div className="col-sm-9">
+          <h2>{title}</h2>
+          <p className="description">{description}</p>
+          <button onClick={reserveRocket} type="button" className="btn btn-primary">reserve rocket</button>
         </div>
-        <button onClick={reserveRocket} type="button">reserve rocket</button>
-      </div>
       )}
     </li>
   );

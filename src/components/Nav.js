@@ -5,24 +5,24 @@ import Logo from '../icon.png';
 const Nav = () => (
   <header className="header">
     <span className="head">
-      <img className="img" src={Logo} alt="logo" />
+      <img className="img navbar-brand" src={Logo} alt="logo" />
       <h1>
         {'Space Travelers\'s Hub'}
       </h1>
     </span>
-    <nav className="nav">
-      <NavLink to="/" className="NavLink" activeClassName="is-active" exact>
+    <nav className="nav justify-content-end">
+      <NavLink to="/" className="nav-link" activeClassName="is-active" exact>
         <span className="rockets">Rockets</span>
       </NavLink>
       <NavLink
-        to="/misssions"
-        className="NavLink"
+        to="/missions"
+        className="nav-link"
         activeClassName="is-active"
       >
         <span className="missions ">Missions</span>
       </NavLink>
-      <NavLink to="/profile" className="NavLink" activeClassName="is-active">
-        <span className="profile ">My profile</span>
+      <NavLink to="/profile" className="nav-link profile" activeClassName="is-active">
+        <span>My profile</span>
       </NavLink>
     </nav>
   </header>
