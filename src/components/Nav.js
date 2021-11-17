@@ -21,8 +21,8 @@ const Nav = () => (
       >
         <span className="missions ">Missions</span>
       </NavLink>
-      <NavLink to="/profile" className="NavLink" activeClassName="is-active">
-        <span className="profile ">My profile</span>
+      <NavLink to="/profile" className="NavLink profile" activeClassName="is-active">
+        <span>My profile</span>
       </NavLink>
     </nav>
   </header>

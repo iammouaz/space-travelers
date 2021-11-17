@@ -24,9 +24,26 @@ const Mission = (props) => {
       <td>{description}</td>
       <td>
         {reserved ? (
-          <Button variant="outline-danger" onClick={() => missionClick(id, reserved)}>Leave Mission</Button>
+          <div className="p-1 mb-1 rounded bg-info text-white">Active Member</div>
         ) : (
-          <Button variant="outline-primary" onClick={() => missionClick(id, reserved)}>Join Mission</Button>
+          <div className="p-1 mb-2 rounded bg-secondary text-white">NOT A MEMBER</div>
+        )}
+      </td>
+      <td>
+        {reserved ? (
+          <Button
+            variant="outline-danger"
+            onClick={() => missionClick(id, reserved)}
+          >
+            Leave Mission
+          </Button>
+        ) : (
+          <Button
+            variant="outline-primary"
+            onClick={() => missionClick(id, reserved)}
+          >
+            Join Mission
+          </Button>
         )}
       </td>
     </tr>
