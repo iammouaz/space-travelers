@@ -7,7 +7,7 @@
 > This project consists in making Book-Store using React.
 
 # Live Demo
-you can check out website [here]()
+you can check out website [here](https://ecstatic-lovelace-98efce.netlify.app/)
 
 ## Built With
 
