@@ -24,9 +24,9 @@ const Mission = (props) => {
       <td>{description}</td>
       <td>
         {reserved ? (
-          <div className="p-1 mb-1 rounded bg-info text-white">Active Member</div>
+          <div className="badge bg-success">Active Member</div>
         ) : (
-          <div className="p-1 mb-2 rounded bg-secondary text-white">NOT A MEMBER</div>
+          <div className="badge bg-secondary">NOT A MEMBER</div>
         )}
       </td>
       <td>
