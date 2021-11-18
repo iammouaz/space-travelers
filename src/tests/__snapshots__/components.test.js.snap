@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Matches Mission Components Matches 1`] = `
+<div>
+  <div
+    className="d-flex justify-content-around"
+  >
+    <div>
+      <h2>
+        My Rockets
+      </h2>
+      <div
+        className="list-group"
+        onKeyDown={[Function]}
+      />
+    </div>
+    <div>
+      <h2>
+        My Missiosn 
+      </h2>
+      <div
+        className="list-group"
+        onKeyDown={[Function]}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Components Matches Missions Components Matches 1`] = `
+<table
+  className="table table-striped table-bordered table-hover"
+>
+  <thead>
+    <tr>
+      <th>
+        Mission
+      </th>
+      <th>
+        Description
+      </th>
+      <th>
+        Status
+      </th>
+    </tr>
+  </thead>
+</table>
+`;
+
+exports[`Test Nav renderisation Nav 1`] = `
+<header
+  className="header"
+>
+  <span
+    className="head"
+  >
+    <img
+      alt="logo"
+      className="img navbar-brand"
+      src="icon.png"
+    />
+    <h1>
+      Space Travelers's Hub
+    </h1>
+  </span>
+  <nav
+    className="nav justify-content-end"
+  >
+    <a
+      aria-current="page"
+      className="nav-link is-active"
+      href="/"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <span
+        className="rockets"
+      >
+        Rockets
+      </span>
+    </a>
+    <a
+      aria-current={null}
+      className="nav-link"
+      href="/missions"
+      onClick={[Function]}
+    >
+      <span
+        className="missions "
+      >
+        Missions
+      </span>
+    </a>
+    <a
+      aria-current={null}
+      className="nav-link profile"
+      href="/profile"
+      onClick={[Function]}
+    >
+      <span>
+        My profile
+      </span>
+    </a>
+  </nav>
+</header>
+`;
