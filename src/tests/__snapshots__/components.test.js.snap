@@ -47,6 +47,14 @@ exports[`Components Matches Missions Components Matches 1`] = `
 </table>
 `;
 
+exports[`Components Rockets Missions Components Matches 1`] = `
+<div>
+  <ul
+    className="rockets-list"
+  />
+</div>
+`;
+
 exports[`Test Nav renderisation Nav 1`] = `
 <header
   className="header"
