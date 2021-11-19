@@ -4,7 +4,7 @@
 
 # Space Travelers's Hub
 
-> This project consists in making Book-Store using React.
+> Web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
 # Live Demo
 you can check out website [here](https://ecstatic-lovelace-98efce.netlify.app/)
